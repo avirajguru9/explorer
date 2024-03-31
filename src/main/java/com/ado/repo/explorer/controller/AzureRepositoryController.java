@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ado.repo.explorer.model.AzureDevOpsFile;
 import com.ado.repo.explorer.service.AzureDevOpsRepositoryService;
 
 @RestController
@@ -19,5 +20,10 @@ public class AzureRepositoryController {
 	@GetMapping("get_list_repo")
 	public String getListOfRepo() {
 		return repositoryService.listRepositories();
+	}
+	
+	@GetMapping("get_file_list")
+	public List<AzureDevOpsFile> getFileList() {
+		return repositoryService.listFiles();
 	}
 }
