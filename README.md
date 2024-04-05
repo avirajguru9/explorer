@@ -1,4 +1,4 @@
-Fetch repositories and sorce code from Azure DevOps https://aex.dev.azure.com/ 
+Fetch repositories and source code from Azure DevOps https://aex.dev.azure.com/ 
 
 1) Fetch the list of repositories
 2) Given a Repository Fetch the list of branches
